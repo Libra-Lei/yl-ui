@@ -4,6 +4,7 @@ public/
 src/
 node_modules/
 docs/
+dist/
 
 # 忽略指定文件
 vue.config.js

@@ -1,7 +1,7 @@
 
 module.exports = {
-  publicPath: '/yl-ui',
-  outputDir: 'docs',
+  publicPath: '/',
+  outputDir: 'dist',
   assetsDir: 'assets',
   productionSourceMap: false,
   css: {

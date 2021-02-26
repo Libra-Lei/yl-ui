@@ -1,14 +1,19 @@
 {
-  "name": "yl-ui",
+  "name": "@libra-lei/yl-ui",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "description": "基于vuesax的组件库",
-  "main": "dist/yl-ui.umd.min.js",
+  "main": "lib/yl-ui.umd.min.js",
+  "publishConfig": {
+    "access": "public"
+  },
   "scripts": {
     "dev": "vue-cli-service serve",
-    "build": "vue-cli-service build",
     "lint": "vue-cli-service lint",
-    "lib": "vue-cli-service build --target lib --name yl-ui --dest dist packages/index.js"
+
+    "lib": "vue-cli-service build --target lib --name yl-ui --dest lib packages/index.js",
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs"
   },
   "repository": {
     "type": "git",
@@ -27,6 +32,7 @@
   "homepage": "https://github.com/Libra-Lei/yl-ui#readme",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
+    "@libra-lei/yl-ui": "^0.1.0",
     "core-js": "^3.6.5",
     "jsonlint-mod": "^1.7.6",
     "material-icons": "^0.5.2",
@@ -49,6 +55,8 @@
     "eslint-plugin-vue": "^6.2.2",
     "less": "^4.1.1",
     "less-loader": "^7.3.0",
-    "vue-template-compiler": "^2.6.11"
+    "vue-template-compiler": "^2.6.11",
+    "vuepress": "^1.8.2",
+    "vuepress-plugin-demo-container": "^0.2.0"
   }
 }
