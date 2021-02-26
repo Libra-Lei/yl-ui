@@ -1,0 +1,257 @@
+/** 布局边框颜色 */
+@layoutBorderColor: rgba(237, 239, 241, .71);
+
+@activeBorderColor: rgb(64, 158, 255); // 选中组件的 边框颜色
+@activeBgColor: rgba(183, 221, 255, 0.5); // 背景色
+
+@gridBorderColor: rgba(220, 195, 144, 1); // 栅格布局的 边框色
+@gridBgColor: rgba(220, 195, 144, .51); // 栅格布局的 背景色
+@gridWrapBgColor: rgba(141, 190, 228, 0.12); // 栅格布局的 父元素 背景色（突出显示栅格布局）
+
+#d-form-wrap {
+  display: flex;
+  flex-direction: row;
+  height: 100%;
+  width: 100%;
+
+  .components-wrap {
+    width: 300px;
+  }
+
+  .form-wrap {
+    flex: 1;
+    border-left: 5px solid @layoutBorderColor;
+    border-right: 5px solid @layoutBorderColor;
+  }
+
+  .property-wrap {
+    width: 300px;
+  }
+
+  /**********************************************************/
+  /** 控件选择列表样式 */
+  .components-list {
+    .title {
+      padding: 10px 14px;
+      border-bottom: 5px solid @layoutBorderColor;
+      text-align: center;
+      
+      h1 {
+        font-size: 18px;
+      }
+    }
+
+    /** 拖拽控件组 */
+    .drag-wrap {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: left;
+      &-btn {
+        border: 1px solid rgba(31, 116, 255, 1);
+        border-radius: 4px;
+        width: 40%;
+        list-style: none;
+        text-align: left;
+        padding: 10px 8px;
+        display: flex;
+        align-items: center;
+        font-size: 14px;
+        font-weight: 500;
+        margin: 10px 8px;
+
+        &:hover {
+          cursor: move;
+        }
+      }
+    }
+  }
+
+  /** 表单展示 */
+  .form-conent {
+    height: calc(100% - 53px);
+
+    .drag-wrap {
+      height: 100%;
+
+      /** 从左侧拖动进来的控件样式 */
+      .drag-wrap-btn {
+        list-style: none;
+        border-top: 5px solid @activeBorderColor;
+      }
+    }
+
+    /** 栅格布局 */
+    .grid-drag-wrap {
+      min-height: 100px;
+      height: 100%;
+      width: 100%;
+
+      background-color: @gridBgColor;
+      border: 1px dotted @gridBorderColor;
+    }
+
+    /** 表单组件 + label 布局 */
+    .form-item-components {
+      margin: 18px 0;
+      /** 默认 标题在上(上下布局) */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      justify-content: center;
+
+      /** 左右布局 */
+      &.lr {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-start;
+
+        &>.label {
+          margin-right: 10px;
+        }
+        &>.vs-input {
+          flex: 1;
+        }
+      }
+
+      &>.label{
+        font-size: 14px;
+        white-space: nowrap;
+        margin-bottom: 6px;
+      }
+      &>.vs-input {
+        width: 100%;
+      }
+
+      /** 多选框 */
+      .checkbox-ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          list-style: none;
+        }
+      }
+
+      /** 单选框 */
+      .radio-ul {
+        display: flex;
+        align-items: center;
+
+        li {
+          list-style: none;
+          margin-right: 8px;
+        }
+      }
+    }
+
+    /** 表单组件拖拽背景样式 */
+    .form-item-wrap {
+      position: relative;
+      padding: 10px 15px;
+      cursor: pointer;
+      
+      /** 栅格布局背景突出显示 */
+      &.grid {
+        background-color: @gridWrapBgColor;
+      }
+
+      &.active {
+        background-color: @activeBgColor;
+        // padding: 10px 15px;
+        cursor: move;
+        &::before {
+          background-color: @activeBorderColor;
+          height: 5px;
+          width: 100%;
+          content: '';
+          display: block;
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+
+        &>.trash-btn {
+          visibility: visible;
+        }
+      }
+
+      &>.trash-btn {
+        visibility: hidden;
+        position: absolute;
+        top: 0;
+        right: 0;
+        background-color: @activeBorderColor;
+        color: white;
+        cursor: pointer;
+        border-radius: 2px;
+        padding: 4px;
+      }
+    }
+  }
+
+  /** 顶部操作栏样式 */
+  .navbar-wrap {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    border-bottom: 5px solid @layoutBorderColor;
+    padding: 9px;
+
+    .vs-button {
+      float: none;
+      margin: 0 4px;
+    }
+  }
+
+  /** 控件属性样式 */
+  .property {
+    .title {
+      padding: 10px 14px;
+      border-bottom: 5px solid @layoutBorderColor;
+      text-align: center;
+      
+      h1 {
+        font-size: 18px;
+      }
+    }
+
+    .content {
+      padding: 16px;
+
+      .vs-input {
+        width: 100%;
+      }
+
+      &>.base>.item {
+        margin-bottom: 12px;
+      }
+
+      .options {
+        &-item {
+          display: flex;
+          align-items: center;
+          margin-bottom: 4px;
+          &-item {
+            margin-right: 4px;
+            &:last-child {
+              margin-right: 0;
+            }
+          }
+        }
+
+        .title {
+          font-size: 14px;
+          padding: 0;
+          text-align: left;
+          border: none;
+        }
+      }
+
+      .operation {
+        display: flex;
+        align-items: center;
+      }
+    }
+  }
+}
