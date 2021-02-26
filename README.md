@@ -1,5 +1,5 @@
-# 表单设计器
-> 基于 vuesax 的简易表单设计器
+# Vue UI Components
+> 基于 vuesax 的 UI 组件库
 
 ## 一、在线预览地址
 [表单设计器](https://libra-lei.github.io/yl-form-design)
@@ -8,11 +8,11 @@
 ### 安装模块
 ```
 # npm
-npm i yl-form-design
+npm i @libra-lei/yl-ui
 ```
 ```
 # yarn
-yarn add yl-form-design
+yarn add @libra-lei/yl-ui
 ```
 
 ### 使用

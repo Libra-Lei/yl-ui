@@ -1,6 +1,6 @@
 
 module.exports = {
-  publicPath: '/yl-form-design',
+  publicPath: '/yl-ui',
   outputDir: 'docs',
   assetsDir: 'assets',
   productionSourceMap: false,
@@ -15,7 +15,7 @@ module.exports = {
     }
   },
   devServer: {
-    port: 8086
+    port: 8087
   }
 
   // configureWebpack: config => {

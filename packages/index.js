@@ -4,16 +4,14 @@ import "@babel/polyfill";
 import './vs-components'
 
 // 表单设计器
-import YlFormDesign from './form-design'
-import YlFormBuild from './form-builder'
+import Alert from './components/alert'
 
 // 引入样式
-import './less/design.less'
-import './less/build.less'
+// import './less/design.less'
 
 // 动态表单生成器
 
-const components = [YlFormBuild, YlFormDesign];
+const components = [Alert];
 
 const install =  (Vue) => {
   components.forEach(component => {
@@ -28,6 +26,5 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  YlFormBuild,
-  YlFormDesign
+  Alert
 }

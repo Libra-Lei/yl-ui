@@ -1,8 +1,7 @@
 
 <template>
   <div class="home">
-    <!-- 表单设计器 -->
-    <yl-form-design></yl-form-design>
+    <yl-alert />
   </div>
 </template>
 

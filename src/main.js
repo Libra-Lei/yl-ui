@@ -3,8 +3,8 @@ import App from './App.vue'
 import router from './router'
 import store from './store'
 
-import YlFormDesign from '../packages'
-Vue.use(YlFormDesign);
+import YlUi from '../packages'
+Vue.use(YlUi);
 
 Vue.config.productionTip = false
 
