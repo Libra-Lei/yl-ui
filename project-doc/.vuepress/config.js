@@ -1,5 +1,5 @@
 module.exports = {
-  base: '/docs/',
+  base: '/yl-ui/',
   title: 'YL-UI',
   description: 'yl-ui 组件库文档',
   locales: {
