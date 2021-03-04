@@ -3,15 +3,19 @@ import "@babel/polyfill";
 // 引入 vuesax 包
 import './vs-components'
 
-// 表单设计器
+// 引入组件
 import Alert from './components/alert'
+import Radio from './components/radio'
 
 // 引入样式
 // import './less/design.less'
 
 // 动态表单生成器
 
-const components = [Alert];
+const components = [
+  Alert,
+  Radio
+];
 
 const install =  (Vue) => {
   components.forEach(component => {
@@ -26,5 +30,6 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Alert
+  Alert,
+  Radio
 }

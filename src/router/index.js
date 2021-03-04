@@ -6,8 +6,37 @@ Vue.use(VueRouter)
 const routes = [
   {
     path: '/',
-    name: 'Home',
-    component: () => import(/* webpackChunkName: "home" */ '../views/Home.vue')
+    redirect: '/base/radio',
+    hidden: true,
+  },
+
+  {
+    path: '/base',
+    component: () => import(/* webpackChunkName: "layout" */ '../layout'),
+    children: [
+      {
+        path: 'radio',
+        name: 'Radio',
+        component: () => import(/* webpackChunkName: "radio" */ '../views/base/radio.vue')
+      },
+      {
+        path: 'upload-mini',
+        name: 'UploadMini',
+        component: () => import(/* webpackChunkName: "upload-mini" */ '../views/base/upload-mini.vue')
+      }
+    ]
+  },
+
+  {
+    path: '/high',
+    component: () => import(/* webpackChunkName: "layout" */ '../layout'),
+    children: [
+      {
+        path: 'upload-table',
+        name: 'UploadTable',
+        component: () => import(/* webpackChunkName: "upload-table" */ '../views/high/upload-table.vue')
+      }
+    ]
   }
 ]
 

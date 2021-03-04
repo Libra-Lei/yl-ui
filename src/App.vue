@@ -13,4 +13,8 @@
   color: #2c3e50;
   height: 100%;
 }
+
+ul {
+  list-style: none;
+}
 </style>

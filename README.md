@@ -2,7 +2,7 @@
 > 基于 vuesax 的 UI 组件库
 
 ## 一、在线预览地址
-[表单设计器](https://libra-lei.github.io/yl-form-design)
+[YL-UI 在线文档](https://libra-lei.github.io/yl-ui)
 
 ## 二、安装和使用
 ### 安装模块
@@ -15,16 +15,25 @@ npm i @libra-lei/yl-ui
 yarn add @libra-lei/yl-ui
 ```
 
-### 使用
+### 引入
+#### 完整引入
 ``` javascript
-import YlFormDesign from 'yl-form-design'
-import 'yl-form-design/dist/yl-form-design.css'
-Vue.use(YlFormDesign)
+import YlUI from '@libra-lei/yl-ui'
+Vue.use(YlUI)
 ```
-``` Vue
-<template>
-  <div id="app">
-    <yl-form-design></yl-form-design>
-  </div>
-</template>
+#### 按需引入
+``` js
+import Vue from 'vue';
+import { Radio, UploadMini } from '@libra-lei/yl-ui';
+
+Vue.component(Radio.name, Radio);
+Vue.component(UploadMini.name, UploadMini);
+/* 或写为
+ * Vue.use(Button)
+ * Vue.use(UploadMini)
+ */
+
 ```
+
+# 注意：
+本组件库尚在开发中...
