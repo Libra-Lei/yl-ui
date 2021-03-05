@@ -8,8 +8,8 @@
     
     <meta name="description" content="yl-ui 组件库文档">
     
-    <link rel="preload" href="/yl-ui/assets/css/0.styles.e0061a1b.css" as="style"><link rel="preload" href="/yl-ui/assets/js/app.6c869c51.js" as="script"><link rel="preload" href="/yl-ui/assets/js/2.3e96f748.js" as="script"><link rel="preload" href="/yl-ui/assets/js/9.0b4e3ad5.js" as="script"><link rel="prefetch" href="/yl-ui/assets/js/3.410b84f9.js"><link rel="prefetch" href="/yl-ui/assets/js/4.cda797fd.js"><link rel="prefetch" href="/yl-ui/assets/js/5.8a2f8c94.js"><link rel="prefetch" href="/yl-ui/assets/js/6.5b02c12a.js"><link rel="prefetch" href="/yl-ui/assets/js/7.59808da5.js"><link rel="prefetch" href="/yl-ui/assets/js/8.ee1cade1.js">
-    <link rel="stylesheet" href="/yl-ui/assets/css/0.styles.e0061a1b.css">
+    <link rel="preload" href="/yl-ui/assets/css/0.styles.d0141063.css" as="style"><link rel="preload" href="/yl-ui/assets/js/app.2da32687.js" as="script"><link rel="preload" href="/yl-ui/assets/js/2.3e96f748.js" as="script"><link rel="preload" href="/yl-ui/assets/js/9.c69f8fa8.js" as="script"><link rel="prefetch" href="/yl-ui/assets/js/3.410b84f9.js"><link rel="prefetch" href="/yl-ui/assets/js/4.0a70102f.js"><link rel="prefetch" href="/yl-ui/assets/js/5.60ea413b.js"><link rel="prefetch" href="/yl-ui/assets/js/6.352f3ca1.js"><link rel="prefetch" href="/yl-ui/assets/js/7.59808da5.js"><link rel="prefetch" href="/yl-ui/assets/js/8.ee1cade1.js">
+    <link rel="stylesheet" href="/yl-ui/assets/css/0.styles.d0141063.css">
   </head>
   <body>
     <div id="app" data-server-rendered="true"><div class="theme-container no-sidebar"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/yl-ui/" aria-current="page" class="home-link router-link-exact-active router-link-active"><!----> <span class="site-name">YL-UI</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>高阶组件</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/yl-ui/components/button/" class="sidebar-link">按钮</a></li><li><a href="/yl-ui/components/test/" class="sidebar-link">测试</a></li></ul></section></li></ul> </aside> <main aria-labelledby="main-title" class="home"><header class="hero"><!----> <h1 id="main-title">
@@ -17,8 +17,24 @@
     </h1> <p class="description">
       yl-ui 组件库文档
     </p> <p class="action"><a href="/yl-ui/components/test/" class="nav-link action-button">
-  欢迎 -&gt;
-</a></p></header> <div class="features"><div class="feature"><h2>yl-ui 官方文档</h2> <p>yl-ui 官方文档</p></div></div> <div class="theme-default-content custom content__default">undefined</div> <!----></main></div><div class="global-ui"></div></div>
-    <script src="/yl-ui/assets/js/app.6c869c51.js" defer></script><script src="/yl-ui/assets/js/2.3e96f748.js" defer></script><script src="/yl-ui/assets/js/9.0b4e3ad5.js" defer></script>
+  快速上手 →
+</a></p></header> <div class="features"><div class="feature"><h2>高阶定制</h2> <p>定制组件</p></div></div> <div class="theme-default-content custom content__default"><div class="language- extra-class"><pre class="language-text"><code># npm
+npm i @libra-lei/yl-ui
+# OR yarn
+yarn add @libra-lei/yl-ui
+</code></pre></div><h3 id="引入"><a href="#引入" class="header-anchor">#</a> 引入</h3> <h4 id="完整引入"><a href="#完整引入" class="header-anchor">#</a> 完整引入</h4> <div class="language-javascript extra-class"><pre class="language-javascript"><code><span class="token keyword">import</span> Vue <span class="token keyword">from</span> <span class="token string">'vue'</span><span class="token punctuation">;</span>
+
+<span class="token comment">// 完整引入</span>
+<span class="token keyword">import</span> YlUI <span class="token keyword">from</span> <span class="token string">'@libra-lei/yl-ui'</span>
+Vue<span class="token punctuation">.</span><span class="token function">use</span><span class="token punctuation">(</span>YlUI<span class="token punctuation">)</span>
+
+<span class="token comment">// 或者按需引入</span>
+<span class="token keyword">import</span> <span class="token punctuation">{</span> Radio<span class="token punctuation">,</span> UploadMini <span class="token punctuation">}</span> <span class="token keyword">from</span> <span class="token string">'@libra-lei/yl-ui'</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>Radio<span class="token punctuation">.</span>name<span class="token punctuation">,</span> Radio<span class="token punctuation">)</span><span class="token punctuation">;</span>
+Vue<span class="token punctuation">.</span><span class="token function">component</span><span class="token punctuation">(</span>UploadMini<span class="token punctuation">.</span>name<span class="token punctuation">,</span> UploadMini<span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre></div></div> <div class="footer">
+    MIT Licensed | Copyright © 2020-present Libra Lei
+  </div></main></div><div class="global-ui"></div></div>
+    <script src="/yl-ui/assets/js/app.2da32687.js" defer></script><script src="/yl-ui/assets/js/2.3e96f748.js" defer></script><script src="/yl-ui/assets/js/9.c69f8fa8.js" defer></script>
   </body>
 </html>
