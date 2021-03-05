@@ -8,7 +8,6 @@ module.exports = {
     }
   },
   themeConfig: {
-    // sidebar: 'auto'
     sidebar: [
       {
         title: '高阶组件',   // 必要的

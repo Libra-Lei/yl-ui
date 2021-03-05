@@ -1,8 +1,29 @@
 ---
 home: true // 是否首页
-actionText: 欢迎 -> 
+actionText: 快速上手 →
 actionLink: /components/test/
 features:
-- title: yl-ui 官方文档
-  details: yl-ui 官方文档
+- title: 高阶定制
+  details: 定制组件
+footer: MIT Licensed | Copyright © 2020-present Libra Lei
 ---
+```
+# npm
+npm i @libra-lei/yl-ui
+# OR yarn
+yarn add @libra-lei/yl-ui
+```
+### 引入
+#### 完整引入
+``` javascript
+import Vue from 'vue';
+
+// 完整引入
+import YlUI from '@libra-lei/yl-ui'
+Vue.use(YlUI)
+
+// 或者按需引入
+import { Radio, UploadMini } from '@libra-lei/yl-ui';
+Vue.component(Radio.name, Radio);
+Vue.component(UploadMini.name, UploadMini);
+```
