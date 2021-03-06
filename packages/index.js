@@ -4,8 +4,9 @@ import "@babel/polyfill";
 import './vs-components'
 
 // 引入组件
-import Alert from './components/alert'
 import Radio from './components/radio'
+import UploadMini from './components/upload-mini'
+import UploadTable from './components/upload-table'
 
 // 引入样式
 // import './less/design.less'
@@ -13,8 +14,9 @@ import Radio from './components/radio'
 // 动态表单生成器
 
 const components = [
-  Alert,
-  Radio
+  UploadMini,
+  Radio,
+  UploadTable
 ];
 
 const install =  (Vue) => {
@@ -30,6 +32,7 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  Alert,
-  Radio
+  UploadMini,
+  Radio,
+  // UploadTable
 }
