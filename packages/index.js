@@ -34,5 +34,5 @@ export default {
   install,
   UploadMini,
   Radio,
-  // UploadTable
+  UploadTable
 }

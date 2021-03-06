@@ -1,13 +1,13 @@
 ---
 home: true // 是否首页
 actionText: 快速上手 →
-actionLink: /components/test/
+actionLink: /components/base/radio
 features:
 - title: 高阶定制
   details: 定制组件
 footer: MIT Licensed | Copyright © 2020-present Libra Lei
 ---
-```
+``` bash
 # npm
 npm i @libra-lei/yl-ui
 # OR yarn
