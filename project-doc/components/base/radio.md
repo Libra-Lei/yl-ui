@@ -1,4 +1,10 @@
-::: demo 此处放置代码示例的描述信息，支持 `Markdown` 语法，**描述信息只支持单行**
+# Radio 单选框组件
+::: tip 提示
+> 允许自定义颜色的单选框组件
+:::
+
+## 基础用法
+::: demo 示例
 ```html
 <template>
   <div class="radio">
@@ -53,3 +59,12 @@ export default {
 </style>
 ```
 :::
+
+## Attribute
+| 参数      | 类型   | 说明                        | 可选值 | 默认值 |
+| :---     | :---   | :---                       | :--- | :--- |
+| yl-label | string | 文字标签                     | -- | -- |
+| yl-value | object | 绑定的值                     | -- | -- |
+| yl-name  | string | name                       | -- | ylLabel |
+| color    | string | 单选框的颜色，仅支持 rgb 三个值 | -- | 115,103,240 |
+| v-model  | object | 绑定值，选中的选项            | -- | 115,103,240 |

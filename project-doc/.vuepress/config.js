@@ -8,6 +8,11 @@ module.exports = {
     }
   },
   themeConfig: {
+    search: true,
+    lastUpdated: '最后更新时间',
+    nav: [
+      { text: 'GitHub', link: 'https://github.com/Libra-Lei/yl-ui', target:'_blank' }
+    ],
     sidebar: [
       {
         title: '基础组件',   // 必要的
