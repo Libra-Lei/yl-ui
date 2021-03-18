@@ -1,0 +1,51 @@
+@font-face {
+  font-family: 'ylicons';
+  src:  url('fonts/ylicons.eot?341it0');
+  src:  url('fonts/ylicons.eot?341it0#iefix') format('embedded-opentype'),
+    url('fonts/ylicons.ttf?341it0') format('truetype'),
+    url('fonts/ylicons.woff?341it0') format('woff'),
+    url('fonts/ylicons.svg?341it0#ylicons') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
+
+.yl-icons {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'ylicons' !important;
+  speak: never;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-check_order:before {
+  content: "\e900";
+}
+.icon-complete_order:before {
+  content: "\e901";
+}
+.icon-finish_order:before {
+  content: "\e902";
+}
+.icon-running_order:before {
+  content: "\e903";
+}
+.icon-sign_order:before {
+  content: "\e904";
+}
+.icon-start_order:before {
+  content: "\e905";
+}
+.icon-summary_order:before {
+  content: "\e906";
+}
+.icon-verify_order:before {
+  content: "\e907";
+}

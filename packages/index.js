@@ -5,17 +5,23 @@ import './vs-components'
 
 // 引入组件
 import Radio from './components/radio'
+import Icon from './components/icon'
+
 import UploadMini from './components/upload-mini'
 import UploadTable from './components/upload-table'
 
 // 引入样式
 // import './less/design.less'
+// 引入字体
+require('./fonts/style.css');
 
 // 动态表单生成器
 
 const components = [
-  UploadMini,
   Radio,
+  Icon,
+
+  UploadMini,
   UploadTable
 ];
 
@@ -32,7 +38,8 @@ if (typeof window !== 'undefined' && window.Vue) {
 
 export default {
   install,
-  UploadMini,
   Radio,
+  Icon,
+  UploadMini,
   UploadTable
 }

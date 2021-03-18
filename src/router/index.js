@@ -15,6 +15,11 @@ const routes = [
     component: () => import(/* webpackChunkName: "layout" */ '../layout'),
     children: [
       {
+        path: 'icon',
+        name: 'Icon',
+        component: () => import(/* webpackChunkName: "icon" */ '../views/base/icon.vue')
+      },
+      {
         path: 'radio',
         name: 'Radio',
         component: () => import(/* webpackChunkName: "radio" */ '../views/base/radio.vue')
