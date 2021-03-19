@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'ylicons';
-  src:  url('fonts/ylicons.eot?341it0');
-  src:  url('fonts/ylicons.eot?341it0#iefix') format('embedded-opentype'),
-    url('fonts/ylicons.ttf?341it0') format('truetype'),
-    url('fonts/ylicons.woff?341it0') format('woff'),
-    url('fonts/ylicons.svg?341it0#ylicons') format('svg');
+  src:  url('fonts/ylicons.eot?ky9af1');
+  src:  url('fonts/ylicons.eot?ky9af1#iefix') format('embedded-opentype'),
+    url('fonts/ylicons.ttf?ky9af1') format('truetype'),
+    url('fonts/ylicons.woff?ky9af1') format('woff'),
+    url('fonts/ylicons.svg?ky9af1#ylicons') format('svg');
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -25,6 +25,33 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-control_system:before {
+  content: "\e908";
+}
+.icon-power_management:before {
+  content: "\e909";
+}
+.icon-power_station:before {
+  content: "\e90a";
+}
+.icon-pv_monitor:before {
+  content: "\e90b";
+}
+.icon-pv:before {
+  content: "\e90c";
+}
+.icon-turbine_monitor:before {
+  content: "\e90f";
+}
+.icon-weather_station:before {
+  content: "\e910";
+}
+.icon-wind_farm:before {
+  content: "\e911";
+}
+.icon-wind_turbine:before {
+  content: "\e912";
+}
 .icon-check_order:before {
   content: "\e900";
 }

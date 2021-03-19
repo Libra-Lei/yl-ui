@@ -36,6 +36,14 @@ export default {
         'verify_order',
         'complete_order',
         'finish_order',
+        'control_system',
+        'power_management',
+        'power_station',
+        'pv_monitor',
+        'pv',
+        'turbine_monitor',
+        'weather_station',
+        'wind_farm'
       ]
     }
   }
