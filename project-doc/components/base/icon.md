@@ -1,6 +1,6 @@
 # Icon 图标组件
 ::: tip 提示
-> 自制图标字体库
+> 本组件使用的是自制图标字体库，有关所有可用图标，请访问 [YL-ICONS](https://libra-lei.github.io/yl-icons/demo.html)。
 :::
 
 ## 基础用法
@@ -41,6 +41,7 @@ export default {
   }
 }
 </script>
+
 
 <style>
 .icon-list {
