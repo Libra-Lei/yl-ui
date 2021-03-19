@@ -908,47 +908,7 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
-"@libra-lei/yl-ui@^0.1.0", "@libra-lei/yl-ui@^0.1.1":
-  version "0.1.1"
-  resolved "https://registry.yarnpkg.com/@libra-lei/yl-ui/-/yl-ui-0.1.1.tgz#bfedae243628cd22cf27664b834d679f3cce3a2f"
-  integrity sha512-dJk0/mGv5E8ES32dujwWQkaz5NS4+yKXxv1COzGds8kBWoI/d5rqOuYAQItgg0AyUt/9Q4eG1rLO+jQW3WzHjw==
-  dependencies:
-    "@babel/polyfill" "^7.12.1"
-    "@libra-lei/yl-ui" "^0.1.0"
-    core-js "^3.6.5"
-    dayjs "^1.10.4"
-    jsonlint-mod "^1.7.6"
-    material-icons "^0.5.2"
-    script-loader "^0.7.2"
-    uuid "^8.3.2"
-    vue "^2.6.11"
-    vue-lazyload "^1.3.3"
-    vue-router "^3.2.0"
-    vue2-datepicker "^3.8.2"
-    vuesax "^3.12.2"
-    vuex "^3.4.0"
-
-"@libra-lei/yl-ui@^0.1.3":
-  version "0.1.3"
-  resolved "https://registry.yarnpkg.com/@libra-lei/yl-ui/-/yl-ui-0.1.3.tgz#a4a90af03cb0135f893251c6e000d5eb89ced09a"
-  integrity sha512-BUFhRm73ZJg1nP5MqNz9kIGTRxfp7u8O8ZLOB2i9D4CzU2KwWMwHY0WfvUaWFCJqYMVa9FISYBz03CKWb6iy6A==
-  dependencies:
-    "@babel/polyfill" "^7.12.1"
-    "@libra-lei/yl-ui" "^0.1.1"
-    core-js "^3.6.5"
-    dayjs "^1.10.4"
-    jsonlint-mod "^1.7.6"
-    material-icons "^0.5.2"
-    script-loader "^0.7.2"
-    uuid "^8.3.2"
-    vue "^2.6.11"
-    vue-lazyload "^1.3.3"
-    vue-router "^3.2.0"
-    vue2-datepicker "^3.8.2"
-    vuesax "^3.12.2"
-    vuex "^3.4.0"
-
-"@libra-lei/yl-ui@^0.1.4":
+"@libra-lei/yl-ui@^0.1.3", "@libra-lei/yl-ui@^0.1.4":
   version "0.1.4"
   resolved "https://registry.yarnpkg.com/@libra-lei/yl-ui/-/yl-ui-0.1.4.tgz#727ca14391393da7a2dcd2c2a39e6bc391d4deff"
   integrity sha512-OREwvbS4wTAqclcmWQ18zSLk92QmSb2SYRT+ZIATL4dANB3P18WtF47cI1KcQoTD/Y0FfsXj267g5jxQ3xWpMw==
