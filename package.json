@@ -1,6 +1,6 @@
 {
   "name": "@libra-lei/yl-ui",
-  "version": "0.1.9",
+  "version": "0.1.10",
   "private": false,
   "description": "基于vuesax的组件库",
   "main": "lib/yl-ui.umd.min.js",
