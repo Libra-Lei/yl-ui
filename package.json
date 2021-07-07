@@ -28,7 +28,7 @@
   "bugs": {
     "url": "https://github.com/Libra-Lei/yl-ui/issues"
   },
-  "homepage": "https://github.com/Libra-Lei/yl-ui#readme",
+  "homepage": "https://libra-lei.github.io/yl-ui",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
     "@libra-lei/yl-ui": "^0.1.5",
