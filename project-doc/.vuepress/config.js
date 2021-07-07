@@ -1,3 +1,11 @@
+/*
+ * @Description: 
+ * @Author: Libra
+ * @GitHub: https://github.com/Libra-Lei
+ * @Date: 2021-02-26 13:48:17
+ * @LastEditors: Libra
+ * @LastEditTime: 2021-07-07 17:09:53
+ */
 module.exports = {
   base: '/yl-ui/',
   title: 'YL-UI',
@@ -21,7 +29,8 @@ module.exports = {
         children: [
           ['/components/base/icon', 'Icon'],
           ['/components/base/radio', 'Radio'],
-          ['/components/base/upload', 'Upload']
+          ['/components/base/upload', 'Upload'],
+          ['/components/base/tag', 'Tag']
         ]
       },
       {
