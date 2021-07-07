@@ -908,6 +908,26 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@libra-lei/yl-ui@^0.1.10":
+  version "0.1.10"
+  resolved "https://registry.yarnpkg.com/@libra-lei/yl-ui/-/yl-ui-0.1.10.tgz#3c73437791e6cec530b3cee303dc1f18875aea45"
+  integrity sha512-qyE/+25QTx4yB/BMKjECTxnnqp0NHol2PpurBd1fVhUdtkFUZT9YtzKda2RY9gUYMxrT6yCntqDWfVCs8UV5BA==
+  dependencies:
+    "@babel/polyfill" "^7.12.1"
+    "@libra-lei/yl-ui" "^0.1.9"
+    core-js "^3.6.5"
+    dayjs "^1.10.4"
+    jsonlint-mod "^1.7.6"
+    material-icons "^0.5.2"
+    script-loader "^0.7.2"
+    uuid "^8.3.2"
+    vue "^2.6.11"
+    vue-lazyload "^1.3.3"
+    vue-router "^3.2.0"
+    vue2-datepicker "^3.8.2"
+    vuesax "^3.12.2"
+    vuex "^3.4.0"
+
 "@libra-lei/yl-ui@^0.1.5", "@libra-lei/yl-ui@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@libra-lei/yl-ui/-/yl-ui-0.1.6.tgz#7ea0869cfad92f010461918fd319d63ed35be19a"
