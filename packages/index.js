@@ -21,7 +21,7 @@ import UploadTable from './components/upload-table'
 import CheckboxGroup from './components/checkbox-group'
 
 // 引入样式
-// import './less/design.less'
+import './less/index.less'
 // 引入字体
 require('./fonts/style.css');
 

@@ -31,7 +31,7 @@
   "homepage": "https://libra-lei.github.io/yl-ui",
   "dependencies": {
     "@babel/polyfill": "^7.12.1",
-    "@libra-lei/yl-ui": "^0.1.8",
+    "@libra-lei/yl-ui": "^0.1.9",
     "core-js": "^3.6.5",
     "dayjs": "^1.10.4",
     "jsonlint-mod": "^1.7.6",
