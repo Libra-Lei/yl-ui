@@ -87,6 +87,7 @@ export default {
 
 <style lang="less" scoped>
 .yl-checkbox-group {
+  list-style: none;
   &.horizontal {
     display: flex;
   }

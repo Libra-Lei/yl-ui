@@ -38,7 +38,8 @@ module.exports = {
         collapsable: false, // 可选的, 默认值是 true,
         sidebarDepth: 1,    // 可选的, 默认值是 1
         children: [
-          ['/components/high/upload-table', 'UploadTable']
+          ['/components/high/upload-table', 'UploadTable'],
+          ['/components/high/checkbox-group', 'CheckboxGroup']
         ]
       }
     ]
