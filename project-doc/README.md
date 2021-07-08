@@ -18,6 +18,8 @@ yarn add @libra-lei/yl-ui
 ``` javascript
 import Vue from 'vue';
 
+// 引入样式文件
+import '@libra-lei/yl-ui/lib/yl-ui.css'
 // 完整引入
 import YlUI from '@libra-lei/yl-ui'
 Vue.use(YlUI)

@@ -88,5 +88,5 @@ export default {
 | size       | 文件大小 |
 | uploadTime | 上传时间 |
 | type       | 文件类 --> image：图片文件， 其他：其他文件 |
-| uuid       | 文件唯一标识id, 用于组件调用者自行区分文件 |
+| uuid       | 文件唯一标识id, 用于组件调用者自行区分文件（例如：设置为服务端id） |
 | file       | File 对象 |
