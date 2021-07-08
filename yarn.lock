@@ -928,6 +928,26 @@
     vuesax "^3.12.2"
     vuex "^3.4.0"
 
+"@libra-lei/yl-ui@^0.1.11":
+  version "0.1.11"
+  resolved "https://registry.yarnpkg.com/@libra-lei/yl-ui/-/yl-ui-0.1.11.tgz#6159abd13442183eaf9fe0f8ab4243f7bb57c549"
+  integrity sha512-+U1ZAQ8/7duWeVAjYB4xkslPOAGsaNiQKoS5LbNtOlMApY1Mh3iWsVYE3baArIq+2/G3zZjgrZcwpLAOnC1phw==
+  dependencies:
+    "@babel/polyfill" "^7.12.1"
+    "@libra-lei/yl-ui" "^0.1.10"
+    core-js "^3.6.5"
+    dayjs "^1.10.4"
+    jsonlint-mod "^1.7.6"
+    material-icons "^0.5.2"
+    script-loader "^0.7.2"
+    uuid "^8.3.2"
+    vue "^2.6.11"
+    vue-lazyload "^1.3.3"
+    vue-router "^3.2.0"
+    vue2-datepicker "^3.8.2"
+    vuesax "^3.12.2"
+    vuex "^3.4.0"
+
 "@libra-lei/yl-ui@^0.1.5", "@libra-lei/yl-ui@^0.1.6":
   version "0.1.6"
   resolved "https://registry.yarnpkg.com/@libra-lei/yl-ui/-/yl-ui-0.1.6.tgz#7ea0869cfad92f010461918fd319d63ed35be19a"
