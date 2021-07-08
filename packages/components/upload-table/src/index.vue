@@ -237,7 +237,6 @@ export default {
         return this.waiting;
       },
       set: function(v) {
-        console.log('v: ', v);
         // this.$emit('change', JSON.parse(JSON.stringify(v)));
         this.$emit('change', [].concat(v));
       }
